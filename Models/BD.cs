@@ -78,22 +78,52 @@ public static Tareas TrerTarea(int Id){
      return TareaDevuelta;
 }
 
-public static void ActualizarTareas(Tareas TareaActualizar){
-    string query ="UPDATE Tareas SET Descripcion,Fecha, Finalizado , IdUsuario WHERE Descripcion = @pDescripcion AND Fecha = @pFecha AND Finalizado = @pFinalizado AND IdUsuario @pIdUsuario ";
+public static void ActualizarTareas(Tareas TareaActualizar)
+{
+    string query ="UPDATE Tareas SET Descripcion = @pDescripcion ,Fecha = @pFecha , Finalizado = @pFinalizado , IdUsuario= @pIdUsuario WHERE Descripcion = @pDescripcion AND Fecha = @pFecha AND Finalizado = @pFinalizado AND IdUsuario= @pIdUsuario ";
      int TareasActualizadas = 0;
 
   using (SqlConnection connection = new SqlConnection(_connectionString))
   {
-   TareasActualizadas = connection.Execute(query, new{pDescripcion = TareaActualizar.Descripcion, pFecha = TareaActualizar.Fecha });
+   TareasActualizadas = connection.Execute(query, new{pDescripcion = TareaActualizar.Descripcion, pFecha = TareaActualizar.Fecha, pFinalizado = TareaActualizar.Finalizado, pIdUsuario = TareaActualizar.IdUsuario });
+  } 
 
 
- } 
+}
 
+public static void FinalizarTarea(int Id)
+{
+ string query = "UPDATE Tareas SET Finalizado = 1 WHERE Id = @pId ";
+ int TareaFinalizada=0;
+
+  using (SqlConnection connection = new SqlConnection(_connectionString))
+  {
+    TareaFinalizada=connection.Execute(query, new{pId = Id});
+  }
 
 }
 
 
 
+
+public static void ActualizarFecahLogIn(int Id){
+    
+string query = "UPDATE Usuarios SET UltimoInicio = Getday() WHERE Id = @pId";
+int UsuarioActualizado =0;
+
+using (SqlConnection connection = new SqlConnection(_connectionString))
+  {
+    UsuarioActualizado = connection.Execute(query, new{pId = Id});
+  }
+
+}
+
+
+
+
+
+
+}
 
 
 

@@ -21,8 +21,10 @@ public string Foto{get; private set;}
     [JsonProperty]
 public DateTime UltimoInicio {get; private set;}
  
+ [JsonProperty]
+public int Id {get; private set;}
 
  public Usuario(){
-    
+
  }
 }
