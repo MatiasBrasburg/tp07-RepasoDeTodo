@@ -19,6 +19,10 @@ public string Apellido{get; private set;}
 public string Foto{get; private set;}
 
     [JsonProperty]
-public Datetime UltimoInicio {get; private set;}
+public DateTime UltimoInicio {get; private set;}
  
+
+ public Usuario(){
+    
+ }
 }
