@@ -1,0 +1,9 @@
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.csproj.AssemblyReference.cache
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.AssemblyInfoInputs.cache
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.AssemblyInfo.cs
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.csproj.CoreCompileInputs.cache
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.RazorAssemblyInfo.cache
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.RazorAssemblyInfo.cs
+C:\Users\49006634\tp07-RepasoDeTodo\obj\Debug\net8.0\Tp07RepasoTodo_Urquizo_Brasburg.sourcelink.json

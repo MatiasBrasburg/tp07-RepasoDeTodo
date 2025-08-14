@@ -1,8 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+ <link rel="stylesheet" href="style.css">
+<section class = "Index">
+    <h1>Login</h1>
+    
+ <form method="post" action = '@Url.Action("LogIn2", "Account")'>
+<p>
 
-<div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
-</div>
+ Usuario: <textarea name="UserName" id="IdUserName" rows="10" cols="10"></textarea>
+
+ Contraseña: <textarea name="Contraseña" id="IdContraseña" rows="10" cols="10">
+</textarea>
+<input type="submit" value=" Enviar">
+
+</p>
+  </form>
+<p>No tienes cuenta, <a href="Registrar.cshtml">Registrarse</a></p>
+
+ 
+</section>

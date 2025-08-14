@@ -42,12 +42,13 @@ public class AccountController : Controller
         return View(DONDE);
     }
 [HttpPost]
-   public IActionResult Registrarse2(Usuario UsuarioRegistrar)
+   public IActionResult Registrarse2(string nombre, string Username, string Nombre, string Apellido, string Foto)
     {
         bool Sepudo = false;
       string DONDE = "Index";
+       DateTime fechaHoy = DateTime.Now;
 
-
+     Usuario UsuarioRegistrar (string nombre, string Username, string Nombre, string Apellido, string Foto,  DateTime fechaHoy);
    
 
 
