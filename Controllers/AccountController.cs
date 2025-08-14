@@ -16,32 +16,40 @@ public class AccountController : Controller
     public IActionResult Index()
     {
           
-   //poner despues ek session con el id del chabon 
+   
 
-        return View("LogIn");
+        return View("Index");
     }
 [HttpPost]
-     public IActionResult LogIn( string UserName, string Contraseña)
+     public IActionResult LogIn2( string UserName, string Contraseña)
     {
-        Usuario Inicializar = Objeto.StringToObject<Usuario>(HttpContext.Session.GetString("BD"));
-        Usuario UsuarioLogin = BD.Login(UserName,Contraseña);
-        string DONDE = "HomeTareas";
+
+
+         UsuarioLogin = BD.Login(UserName,Contraseña);
+        string DONDE = "PagPrincipal";
         ViewBag.Existe = UsuarioLogin;
         if(ViewBag.Existe == null){
           DONDE = "Index";
-           ViewBag.Mensaje = "Usuario o contraseña incorrectos";
+           ViewBag.MensajeLogin = "Usuario o contraseña incorrectos";
+        } 
+        else
+        {
+            BD.ActualizarFecahLogIn(UsuarioLogin.id);
+        HttpContext.Session.SetString("ID", UsuarioLogin.id);
+
         }
 
         return View(DONDE);
     }
 [HttpPost]
-   public IActionResult Registrarse(Usuario UsuarioRegistrar)
+   public IActionResult Registrarse2(Usuario UsuarioRegistrar)
     {
         bool Sepudo = false;
-      string DONDE = "index";
+      string DONDE = "Index";
 
-//poner lo de httpost para guardar el id en session
-        Usuario Inicializar = Objeto.StringToObject<Usuario>(HttpContext.Session.GetString("BD"));
+
+   
+
 
         Sepudo = BD.Resgistro(UsuarioRegistrar);
          ViewBag.Existe = Sepudo;
@@ -49,6 +57,7 @@ public class AccountController : Controller
         if(ViewBag.Existe == false)
         {
                DONDE = "Registrar";
+                HttpContext.Session.SetString("ID", Resgistro.id);
         }
         else
         {
@@ -59,20 +68,23 @@ public class AccountController : Controller
 
         return View(DONDE);
     }
-
-    [HttpPost]
-     public IActionResult LogIn( string UserName, string Contraseña)
+[HttpPost]
+     public IActionResult CerrarSesion ()
     {
-        Usuario Inicializar = Objeto.StringToObject<Usuario>(HttpContext.Session.GetString("BD"));
-        Usuario UsuarioLogin = BD.Login(UserName,Contraseña);
-        string DONDE = "HomeTareas";
-        ViewBag.Existe = UsuarioLogin;
-        if(ViewBag.Existe == null){
-          DONDE = "Index";
-           ViewBag.Mensaje = "Usuario o contraseña incorrectos";
-        }
-
-        return View(DONDE);
+        HttpContext.Session.SetString();
+        return View("Index");
     }
+   
+     public IActionResult Registrarse1()
+    {
+    
+        return View("Registrarse");
+    }
+    public IActionResult LogIn1()
+    {
+    
+        return View("Index");
+    }
+
 }
 

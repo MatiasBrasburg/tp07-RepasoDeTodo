@@ -35,18 +35,18 @@ bool existe;
     return existe;
 }
 
-public static List<Tareas> TraerTareas( int Id )
+public static List<Tareas> TraerTareas( int IdUsuario )
 {
     List<Tareas> TareasList = new List<Tareas>();
      using (SqlConnection connection = new SqlConnection(_connectionString))
      {
-        string query = "SELECT * FROM Tareas WHERE Id = @pId";
-        TareasList= connection.Query<Tareas>(query, new { pId= Id}).ToList();
+        string query = "SELECT * FROM Tareas WHERE IdUsuario = @pIdUsuario";
+        TareasList= connection.Query<Tareas>(query, new { pIdUsuario= IdUsuario}).ToList();
      }
      return TareasList;
 }
 
-public static  void CrearTarea(Tareas TareaNueva)
+public static  int CrearTarea(Tareas TareaNueva)
 {
 
     string query = "INSERT INTO Tareas (Descripcion, Fecha, Finalizado, IdUsuario) VALUES ( @pDescripcion, @pFecha,  @pFinalizado,  @pIdUsuario)";
@@ -56,18 +56,20 @@ public static  void CrearTarea(Tareas TareaNueva)
     {
         TareasAgregadas= connection.Execute(query, new { @pDescripcion = TareaNueva.Descripcion, @pFecha = TareaNueva.Fecha,  @pFinalizado = TareaNueva.Finalizado,  @pIdUsuario = TareaNueva.IdUsuario});
     }
+    return TareasAgregadas;
 }
 
-public static void EliminarTarea(int Id){
+public static int EliminarTarea(int Id){
     string query = "DELETE * FROM Tareas WHERE Tareas.Id = @pId";
     int TereasEliminadas =0;
 
     using (SqlConnection connection = new SqlConnection(_connectionString)){
         TereasEliminadas = connection.Execute(query, new{pId=Id});
     }
+    return TereasEliminadas;
 }
 
-public static Tareas TrerTarea(int Id){
+public static Tareas TraerTarea(int Id){
     Tareas TareaDevuelta = null;
 
      using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -78,20 +80,20 @@ public static Tareas TrerTarea(int Id){
      return TareaDevuelta;
 }
 
-public static void ActualizarTareas(Tareas TareaActualizar)
+public static int ActualizarTareas(Tareas TareaActualizar)
 {
-    string query ="UPDATE Tareas SET Descripcion = @pDescripcion ,Fecha = @pFecha , Finalizado = @pFinalizado , IdUsuario= @pIdUsuario WHERE Descripcion = @pDescripcion AND Fecha = @pFecha AND Finalizado = @pFinalizado AND IdUsuario= @pIdUsuario ";
+    string query ="UPDATE Tareas SET Descripcion = @pDescripcion ,Fecha = @pFecha , Finalizado = @pFinalizado , IdUsuario= @pIdUsuario WHERE TareaActualizar.Id = Id ";
      int TareasActualizadas = 0;
 
   using (SqlConnection connection = new SqlConnection(_connectionString))
   {
    TareasActualizadas = connection.Execute(query, new{pDescripcion = TareaActualizar.Descripcion, pFecha = TareaActualizar.Fecha, pFinalizado = TareaActualizar.Finalizado, pIdUsuario = TareaActualizar.IdUsuario });
   } 
-
+return TareasActualizadas; 
 
 }
 
-public static void FinalizarTarea(int Id)
+public static int FinalizarTarea(int Id)
 {
  string query = "UPDATE Tareas SET Finalizado = 1 WHERE Id = @pId ";
  int TareaFinalizada=0;
@@ -100,7 +102,7 @@ public static void FinalizarTarea(int Id)
   {
     TareaFinalizada=connection.Execute(query, new{pId = Id});
   }
-
+return TareaFinalizada;
 }
 
 
