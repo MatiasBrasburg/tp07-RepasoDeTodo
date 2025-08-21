@@ -23,9 +23,8 @@ public class AccountController : Controller
 [HttpPost]
      public IActionResult LogIn2( string UserName, string Contraseña)
     {
+       Usuario UsuarioLogin = BD.Login(UserName,Contraseña);
 
-
-         UsuarioLogin = BD.Login(UserName,Contraseña);
         string DONDE = "PagPrincipal";
         ViewBag.Existe = UsuarioLogin;
         if(ViewBag.Existe == null){
@@ -34,7 +33,7 @@ public class AccountController : Controller
         } 
         else
         {
-            BD.ActualizarFecahLogIn(UsuarioLogin.id);
+            BD.ActualizarFecahLogIn(id);
         HttpContext.Session.SetString("ID", UsuarioLogin.id);
 
         }
@@ -48,7 +47,7 @@ public class AccountController : Controller
       string DONDE = "Index";
        DateTime fechaHoy = DateTime.Now;
 
-     Usuario UsuarioRegistrar (string nombre, string Username, string Nombre, string Apellido, string Foto,  DateTime fechaHoy);
+     Usuario UsuarioRegistrar  = new Usuario ( nombre, Username, Nombre, Apellido, Foto, fechaHoy);
    
 
 
@@ -58,7 +57,7 @@ public class AccountController : Controller
         if(ViewBag.Existe == false)
         {
                DONDE = "Registrar";
-                HttpContext.Session.SetString("ID", Resgistro.id);
+                HttpContext.Session.SetString("ID", UsuarioRegistrar.id);
         }
         else
         {
@@ -72,7 +71,7 @@ public class AccountController : Controller
 [HttpPost]
      public IActionResult CerrarSesion ()
     {
-        HttpContext.Session.SetString();
+            HttpContext.Session.Clear();
         return View("Index");
     }
    

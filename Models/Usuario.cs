@@ -24,7 +24,13 @@ public DateTime UltimoInicio {get; private set;}
  [JsonProperty]
 public int Id {get; private set;}
 
- public Usuario(){
+ public Usuario()
+ {
+
+ }
+
+ public Usuario(string Username, string Nombre, string Apellido , string Foto, DateTime UltimoInicio,int Id  )
+ {
 
  }
 }

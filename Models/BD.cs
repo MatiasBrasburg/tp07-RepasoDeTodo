@@ -59,7 +59,7 @@ public static  int CrearTarea(Tareas TareaNueva)
     return TareasAgregadas;
 }
 
-public static int EliminarTarea(int Id){
+public static int EliminarTarea(int Id){ 
     string query = "DELETE * FROM Tareas WHERE Tareas.Id = @pId";
     int TereasEliminadas =0;
 
@@ -93,14 +93,14 @@ return TareasActualizadas;
 
 }
 
-public static int FinalizarTarea(int Id)
+public static int FinalizarTarea(int Id) 
 {
  string query = "UPDATE Tareas SET Finalizado = 1 WHERE Id = @pId ";
  int TareaFinalizada=0;
 
   using (SqlConnection connection = new SqlConnection(_connectionString))
   {
-    TareaFinalizada=connection.Execute(query, new{pId = Id});
+    TareaFinalizada =connection.Execute(query, new{pId = Id});
   }
 return TareaFinalizada;
 }

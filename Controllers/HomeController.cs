@@ -21,11 +21,11 @@ public class HomeController : Controller
 
        public IActionResult CrearTarea( string Descripcion, DateTime Fecha)
     {
-       HttpContext.Session.GetString("ID", UsuarioLogin.id);
-      int Finalizado = 0;
-      Tareas TareaNueva = (Descripcion, Fecha, Finalizado,  UsuarioLogin.id );
+        int id  =  int.Parse(HttpContext.Session.GetString("ID"));
+      bool Finalizado = false;
+      Tareas TareaNueva = new Tareas(Descripcion, Fecha, Finalizado, id );
       
-      if(BD.TraerTarea() != TareaNueva)
+      if(BD.TraerTarea(id) != TareaNueva)
       {
          int seCreo = BD.CrearTarea(TareaNueva);
        
@@ -46,7 +46,7 @@ public class HomeController : Controller
   public IActionResult EliminarTarea( int Id)
     {
 
-      if(BD.EliminarTarea(Id) => 1 )
+      if(BD.EliminarTarea(Id) >= 1 )
       {
         
            ViewBag.MensajeEliminar = "Se Elimino la tarea correctamente";
@@ -63,7 +63,7 @@ public class HomeController : Controller
   public IActionResult FinalizarTarea( int Id)
     {
 
-      if(BD.FinalizarTarea(Id) => 1 )
+      if(BD.FinalizarTarea(Id) >= 1)
       {
         
            ViewBag.MensajeEliminar = "Se finalizar la tarea correctamente";
@@ -79,8 +79,8 @@ public class HomeController : Controller
 
      public IActionResult TraerTareas()
     {
-       HttpContext.Session.GetString("ID", UsuarioLogin.id);
-     List<Tareas> TareasList = BD.TraerTareas(UsuarioLogin.id);
+      int id  =  int.Parse(HttpContext.Session.GetString("ID"));
+     List <Tareas> TareasList = BD.TraerTareas(id);
     ViewBag.Tareas = TareasList;
 
      return View("PagPrincipal");
@@ -90,19 +90,19 @@ public class HomeController : Controller
     
   public IActionResult TraerTarea()
     {
-       HttpContext.Session.GetString("ID", UsuarioLogin.id);
-     Tareas Tarea = BD.TraerTarea(UsuarioLogin.id);
+        int id  =  int.Parse(HttpContext.Session.GetString("ID"));
+     Tareas Tarea = BD.TraerTarea(id);
     ViewBag.Tarea = Tarea;
 
      return View("PagPrincipal");
 
     }
 
- public IActionResult ActualizarTarea( string Descripcion, DateTime Fecha, int Finalizado, int idTarea)
+ public IActionResult ActualizarTarea( string Descripcion, DateTime Fecha, bool Finalizado, int idTarea)
     {
-       HttpContext.Session.GetString("ID", UsuarioLogin.id);
+      int id  =  int.Parse(HttpContext.Session.GetString("ID"));
 
-      Tareas TareaAActualizar = (Descripcion, Fecha, Finalizado, idTarea,  UsuarioLogin.id );
+      Tareas TareaAActualizar = new Tareas (Descripcion, Fecha, Finalizado, idTarea);
       
       if(BD.TraerTarea() == TareaAActualizar)
       {

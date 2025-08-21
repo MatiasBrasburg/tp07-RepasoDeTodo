@@ -17,11 +17,15 @@ public bool Finalizado {get; private set;}
 public int IdUsuario {get; private set;}
 
 
-public Tareas()
+public Tareas(string Descripcion, DateTime Fecha, bool Finalizado, int id)
 {
 
 }
 
+public Tareas()
+{
+
+}
 
  
 }
