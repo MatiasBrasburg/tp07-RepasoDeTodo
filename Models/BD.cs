@@ -7,7 +7,7 @@ public static class BD
 {
 
 private static string _connectionString = @"Server=localhost;
-DataBase=ProgTP7- Repaso - ToDo List(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
+DataBase=Tp7-Repaso-ToDoList(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
 
 
 
