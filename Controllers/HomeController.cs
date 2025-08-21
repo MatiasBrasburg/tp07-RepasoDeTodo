@@ -15,8 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        
-        return RedirectToAction ("Index" , "AccountController" );
+        return RedirectToAction ("Index" , "Account" );
     }
 
        public IActionResult CrearTarea( string Descripcion, DateTime Fecha)
@@ -104,7 +103,7 @@ public class HomeController : Controller
 
       Tareas TareaAActualizar = new Tareas (Descripcion, Fecha, Finalizado, idTarea);
       
-      if(BD.TraerTarea() == TareaAActualizar)
+      if(BD.TraerTarea(id) == TareaAActualizar)
       {
          int seActualizo = BD.ActualizarTareas(TareaAActualizar);
        

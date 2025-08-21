@@ -15,9 +15,6 @@ public class AccountController : Controller
 
     public IActionResult Index()
     {
-          
-   
-
         return View("Index");
     }
 [HttpPost]
@@ -33,21 +30,21 @@ public class AccountController : Controller
         } 
         else
         {
-            BD.ActualizarFecahLogIn(id);
-        HttpContext.Session.SetString("ID", UsuarioLogin.id);
+            BD.ActualizarFecahLogIn(UsuarioLogin.Id);
+        HttpContext.Session.SetString("ID", UsuarioLogin.Id.ToString());
 
         }
 
         return View(DONDE);
     }
 [HttpPost]
-   public IActionResult Registrarse2(string nombre, string Username, string Nombre, string Apellido, string Foto)
+   public IActionResult Registrarse2(string UserName, string Contraseña, string Nombre, string Apellido, string Foto)
     {
         bool Sepudo = false;
       string DONDE = "Index";
        DateTime fechaHoy = DateTime.Now;
 
-     Usuario UsuarioRegistrar  = new Usuario ( nombre, Username, Nombre, Apellido, Foto, fechaHoy);
+     Usuario UsuarioRegistrar  = new Usuario ( UserName, Contraseña, Nombre, Apellido, Foto);
    
 
 
@@ -57,7 +54,7 @@ public class AccountController : Controller
         if(ViewBag.Existe == false)
         {
                DONDE = "Registrar";
-                HttpContext.Session.SetString("ID", UsuarioRegistrar.id);
+                HttpContext.Session.SetString("ID", UsuarioRegistrar.Id.ToString());
         }
         else
         {
@@ -78,7 +75,7 @@ public class AccountController : Controller
      public IActionResult Registrarse1()
     {
     
-        return View("Registrarse");
+        return View("Registrar");
     }
     public IActionResult LogIn1()
     {

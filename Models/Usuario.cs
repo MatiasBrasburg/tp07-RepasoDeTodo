@@ -18,8 +18,7 @@ public string Apellido{get; private set;}
     [JsonProperty]
 public string Foto{get; private set;}
 
-    [JsonProperty]
-public DateTime UltimoInicio {get; private set;}
+
  
  [JsonProperty]
 public int Id {get; private set;}
@@ -29,7 +28,7 @@ public int Id {get; private set;}
 
  }
 
- public Usuario(string Username, string Nombre, string Apellido , string Foto, DateTime UltimoInicio,int Id  )
+ public Usuario(string Username, string Contraseña, string Nombre, string Apellido, string Foto)
  {
 
  }

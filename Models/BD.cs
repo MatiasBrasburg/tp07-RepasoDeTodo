@@ -7,7 +7,7 @@ public static class BD
 {
 
 private static string _connectionString = @"Server=localhost;
-DataBase=ProgTP6BaseDeDatos;Integrated Security=True;TrustServerCertificate=True;";
+DataBase=ProgTP7- Repaso - ToDo List(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
 
 
 
@@ -28,8 +28,8 @@ public static bool  Resgistro (Usuario user)
 bool existe;
     using (SqlConnection connection = new SqlConnection(_connectionString))
     {
-        string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre,Apellido,Foto,UltimoInicio) VALUES (@pUsername,  @pContraseña, @pNombre,  @pApellido, @pFoto,  @pUltimoInicio)";
-        existe = connection.QueryFirstOrDefault<bool>(query, new {Username= user.Username,  Contraseña=user.Contraseña , Nombre = user.Nombre  ,  Apellido = user.Apellido,  Foto  = user.Foto,   UltimoInicio =  user.UltimoInicio});
+        string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre,Apellido,Foto,UltimoInicio) VALUES (@pUsername,  @pContraseña, @pNombre,  @pApellido, @pFoto)";
+        existe = connection.QueryFirstOrDefault<bool>(query, new {Username= user.Username,  Contraseña=user.Contraseña , Nombre = user.Nombre  ,  Apellido = user.Apellido,  Foto  = user.Foto});
     }
  
     return existe;
