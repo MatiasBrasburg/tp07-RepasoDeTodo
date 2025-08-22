@@ -48,12 +48,12 @@ public class HomeController : Controller
       if(BD.EliminarTarea(Id) >= 1 )
       {
         
-           ViewBag.MensajeEliminar = "Se Elimino la tarea correctamente";
+           ViewBag.Mensaje = "Se Elimino la tarea correctamente";
 
       }
       else
       {
-         ViewBag.MensajeEliminar = "No se pudo eliminar esta tare";
+         ViewBag.Mensaje= "No se pudo eliminar esta tare";
       }
       
       return View("PagPrincipal");
@@ -65,12 +65,12 @@ public class HomeController : Controller
       if(BD.FinalizarTarea(Id) >= 1)
       {
         
-           ViewBag.MensajeEliminar = "Se finalizar la tarea correctamente";
+           ViewBag.Mensaje = "Se finalizar la tarea correctamente";
 
       }
       else
       {
-         ViewBag.MensajeEliminar = "No se pudo finalizar esta tare";
+         ViewBag.Mensaje = "No se pudo finalizar esta tare";
       }
       
       return View("PagPrincipal");

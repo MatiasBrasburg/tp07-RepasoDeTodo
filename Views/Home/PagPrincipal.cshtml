@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Index";
+}
+ <link rel="stylesheet" href="style.css">
+<section class = "paginaPrincipal">
+   
+    @foreach (Tarea tareas in ViewBag.Tareas){
+        @ViewBag.Tarea
+       <a  href='@Url.Action("ActualizarTarea", "Home")'>Actualizar Tarea</a>
+
+       <a  href='@Url.Action("EliminarTarea", "Home", {new id = tareas.id})'>Eliminar Tarea</a>
+       <a  href='@Url.Action("FinalizarTarea", "Home", {new id = tareas.id})'>Finalizar Tarea</a>
+  
+
+    }
+
+       <p> @ViewBag.Mensaje </p>
+ 
+ 
+</section>
