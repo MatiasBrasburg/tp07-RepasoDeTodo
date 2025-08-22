@@ -7,7 +7,7 @@ public static class BD
 {
 
 private static string _connectionString = @"Server=localhost;
-DataBase=Tp7-Repaso-ToDoList(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
+DataBase=Tp7- Repaso - ToDo List(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
 
 
 
@@ -29,7 +29,7 @@ bool existe;
     using (SqlConnection connection = new SqlConnection(_connectionString))
     {
         string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre,Apellido,Foto,UltimoInicio) VALUES (@pUsername,  @pContraseña, @pNombre,  @pApellido, @pFoto)";
-        existe = connection.QueryFirstOrDefault<bool>(query, new {Username= user.Username,  Contraseña=user.Contraseña , Nombre = user.Nombre  ,  Apellido = user.Apellido,  Foto  = user.Foto});
+        existe = connection.QueryFirstOrDefault<bool>(query, new {pUsername= user.Username,  pContraseña=user.Contraseña , pNombre = user.Nombre  ,  pApellido = user.Apellido,  pFoto  = user.Foto});
     }
  
     return existe;

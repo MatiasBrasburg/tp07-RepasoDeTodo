@@ -5,7 +5,7 @@
 <section class = "CrearTarea">
     <h1>Aqui puedes crear las tareas</h1>
     
- <form method="post" action = '@Url.Action("LogIn2", "Account")'>
+ <form method="post" action = '@Url.Action("CrearTarea", "Home")'>
 <p>
 Ingrese la nueva tarea
  Descripcion: <textarea name="Descripcion" id="IdUserName" rows="1" cols="10"></textarea>
@@ -15,7 +15,8 @@ Ingrese la nueva tarea
 <input type="submit" value=" Enviar">
 
 </p>
-  
+    </form>
+    
 <h2>
 @ViewBag.MensajeCrear
 </h2>
