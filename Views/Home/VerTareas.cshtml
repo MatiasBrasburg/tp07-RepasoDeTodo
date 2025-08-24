@@ -1,0 +1,24 @@
+
+
+@{
+    ViewData["Title"] = "VerTareas";
+}
+   <H1>Tus Tareas</H1>
+    @foreach (Tareas tareas in ViewBag.Tareas){
+        
+        <li>@ViewBag.Tarea.Titulo</li>
+        <li>@ViewBag.Tarea.Descripcion</li>
+        <li>@ViewBag.Tarea.Fecha</li>
+        <li>@ViewBag.Tarea.Finalizado</li>
+
+
+       <a  href='@Url.Action("ActualizarTarea", "Home")'>Actualizar Tarea</a>
+
+       <a  href='@Url.Action("EliminarTarea", "Home", new {Id = tareas.Id})'>Eliminar Tarea</a>
+       <a  href='@Url.Action("FinalizarTarea", "Home", new {Id = tareas.Id})'>Finalizar Tarea</a>
+  
+
+    }
+
+       <p> @ViewBag.Mensaje </p>
+ 

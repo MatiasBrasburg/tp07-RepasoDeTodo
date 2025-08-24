@@ -1,33 +1,36 @@
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Registrar";
 }
- <link rel="stylesheet" href="style.css">
-<section class = "Registrar">
-    <h1>Login</h1>
+<section class="register-box">
+    <h1>Registrarse</h1>
     
- <form method="post" action = '@Url.Action("Registrarse2", "Account")'>
-<p>
+    <form method="post" action='@Url.Action("Registrarse2", "Account")'>
+        <ul>
+            <li>Usuario: 
+                <input type="text" name="UserName" id="IdUserName">
+            </li>
 
- Usuario: <textarea name="UserName" id="IdUserName" rows="1" cols="10"></textarea>
+            <li>Contraseña: 
+                <input type="password" name="Contraseña" id="IdContraseña">
+            </li>
 
- Contraseña: <textarea name="Contraseña" id="IdContraseña" rows="1" cols="10">
-</textarea>
-Nombre: <textarea name="Nombre" id="IdUserName" rows="1" cols="10"></textarea>
+            <li>Nombre: 
+                <input type="text" name="Nombre" id="IdNombre">
+            </li>
 
- Apellido: <textarea name="Apellido" id="IdContraseña" rows="1" cols="10">
-</textarea>
-Foto: <textarea name="Foto" id="IdFoto" rows="1" cols="10"></textarea>
+            <li>Apellido: 
+                <input type="text" name="Apellido" id="IdApellido">
+            </li>
 
-<input type="submit" value=" Enviar">
-
-</p>
-  </form>
-
-
+            <li>Foto: 
+                <input type="text" name="Foto" id="IdFoto">
+            </li>
+        </ul>
  
+        <input type="submit" value="Enviar">
+    </form>
 
-
-
-
-
+    <p>Ya tenés cuenta, 
+        <a href='@Url.Action("LogIn1", "Account")'>Inicia sesión</a>
+    </p> 
 </section>

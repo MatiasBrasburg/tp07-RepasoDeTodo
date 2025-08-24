@@ -1,25 +1,26 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
- <link rel="stylesheet" href="style.css">
-<section class = "Index">
+<section class="login-box">
     <h1>Login</h1>
     
- <form method="post" action = '@Url.Action("LogIn2", "Account")'>
-<p>
+    <form method="post" action='@Url.Action("LogIn2", "Account")'>
+        <p>
+            <li>Usuario: 
+                <textarea name="UserName" id="IdUserName" rows="1" cols="20"></textarea>
+            </li>
 
- Usuario: <textarea name="UserName" id="IdUserName" rows="1" cols="10"></textarea>
+            <li>Contraseña: 
+                 <input type="password" name="Contraseña" id="IdContraseña">
+            </li>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+     <h2>@ViewBag.MensajeLogin</h2>
 
- Contraseña: <textarea name="Contraseña" id="IdContraseña" rows="1" cols="10">
-</textarea>
-<input type="submit" value=" Enviar">
+    <p>No tienes cuenta, 
+        <a href='@Url.Action("Registrarse1", "Account")'>Registrate</a>
+    </p>
 
-</p>
-  </form>
-<p>No tienes cuenta, <a  href='@Url.Action("Registrarse1", "Account")'>Registrarse</a></p>
-
-<h2>
-@ViewBag.MensajeLogin
-</h2>
- 
+   
 </section>

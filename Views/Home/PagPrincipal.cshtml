@@ -1,20 +1,26 @@
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "PagPrincipal";
 }
- <link rel="stylesheet" href="style.css">
+ <link rel="site.css" href="style.css">
 <section class = "paginaPrincipal">
+
+
+<div>
+<a  href='@Url.Action("VerTareas", "Home")'>
+     <img src="/imagenes/lista-tareas-estilo-dibujos-animados-mujer-lapiz-sus-manos-cerca-pizarra-estilo-plano_338906-21.jpg.jpg" alt="verTareas" >
+     <p>Ver Tareas</p>
+     </a>
+</div>
+
+<div>
+<a href='@Url.Action("CrearTarea", "Home")'>
+    <img src="/imagenes/CrearTarea.jpg" alt="crearTarea">
+    <p>Crear Tareas</p>
+</a>
+</div>
    
-    @foreach (Tareas tareas in ViewBag.Tareas){
-        @ViewBag.Tarea
-       <a  href='@Url.Action("ActualizarTarea", "Home")'>Actualizar Tarea</a>
 
-       <a  href='@Url.Action("EliminarTarea", "Home", new {Id = tareas.Id})'>Eliminar Tarea</a>
-       <a  href='@Url.Action("FinalizarTarea", "Home", new {Id = tareas.Id})'>Finalizar Tarea</a>
-  
+<button><a href="@Url.Action("CerrarSesion", "Account")">Cerrar sesion</a></button>
 
-    }
-
-       <p> @ViewBag.Mensaje </p>
- 
  
 </section>

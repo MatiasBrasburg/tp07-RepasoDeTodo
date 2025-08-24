@@ -71,10 +71,11 @@ public class AccountController : Controller
             HttpContext.Session.Clear();
         return View("Index");
     }
+    
    
      public IActionResult Registrarse1()
     {
-    
+
         return View("Registrar");
     }
     public IActionResult LogIn1()

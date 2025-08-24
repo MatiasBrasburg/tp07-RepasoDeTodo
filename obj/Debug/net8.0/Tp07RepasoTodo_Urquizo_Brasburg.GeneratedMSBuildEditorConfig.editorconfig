@@ -9,47 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tp07RepasoTodo_Urquizo_Brasburg
 build_property.RootNamespace = Tp07RepasoTodo_Urquizo_Brasburg
-build_property.ProjectDir = C:\Users\49006634\tp07-RepasoDeTodo\
+build_property.ProjectDir = /Users/francourquizo/Documents/tp07-RepasoDeTodo/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\49006634\tp07-RepasoDeTodo
+build_property.MSBuildProjectDirectory = /Users/francourquizo/Documents/tp07-RepasoDeTodo
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Account/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Account/Registrar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXIuY3NodG1s
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Account/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Home/ActualizarTareas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY3R1YWxpemFyVGFyZWFzLmNzaHRtbA==
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Home/ActualizarTareas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BY3R1YWxpemFyVGFyZWFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Home/CrearTarea.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhclRhcmVhLmNzaHRtbA==
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Home/CrearTarea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DcmVhclRhcmVhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Home/PagPrincipal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdQcmluY2lwYWwuY3NodG1s
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Home/PagPrincipal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QYWdQcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Home/VerTareas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WZXJUYXJlYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49006634/tp07-RepasoDeTodo/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/francourquizo/Documents/tp07-RepasoDeTodo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
