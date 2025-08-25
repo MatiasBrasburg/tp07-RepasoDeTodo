@@ -7,7 +7,7 @@ public static class BD
 {
 
 private static string _connectionString = @"Server=localhost;
-DataBase=Tp7-Repaso-ToDoList(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
+DataBase=Tp7_ToDoList;Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
 
 
 
@@ -29,8 +29,7 @@ public static bool Resgistro(Usuario user)
     bool Existe = true;
     using (SqlConnection connection = new SqlConnection(_connectionString))
     {
-        string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre, Apellido, Foto) " +
-                       "VALUES (@pUsername, @pContraseña, @pNombre, @pApellido, @pFoto)";
+        string query = "INSERT INTO Usuarios (Username , Contraseña , Nombre , Apellido , Foto ) VALUES (@pUsername, @pContraseña, @pNombre , @pApellido , @pFoto)";
 
         filas = connection.Execute(query, new
         {
@@ -43,13 +42,13 @@ public static bool Resgistro(Usuario user)
         if(filas> 1){
            Existe = false;
         }
-    
+    Console.WriteLine(user.Username);
     }
     return Existe;
 }
 
 
-public static List<Tareas> TraerTareas( int IdUsuario )
+public static List<Tareas> TraerTareas1( int IdUsuario )
 {
     List<Tareas> TareasList = new List<Tareas>();
      using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -124,7 +123,7 @@ return TareaFinalizada;
 
 public static void ActualizarFecahLogIn(int Id){
     
-string query = "UPDATE Usuarios SET UltimoInicio = Getday() WHERE Id = @pId";
+string query = "UPDATE Usuarios SET UltimoInicio = GETDATE() WHERE Id = @pId";
 int UsuarioActualizado =0;
 
 using (SqlConnection connection = new SqlConnection(_connectionString))

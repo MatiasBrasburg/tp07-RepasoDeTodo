@@ -38,7 +38,8 @@ public class AccountController : Controller
 
         return View(DONDE);
     }
-[HttpPost]
+
+    [HttpPost]
    public IActionResult Registrarse2(string UserName, string Contraseña, string Nombre, string Apellido, string Foto)
     {
         
@@ -50,9 +51,9 @@ public class AccountController : Controller
 
 
         
-         ViewBag.Existe =  BD.Resgistro(UsuarioRegistrar);;
+         ViewBag.Existe =  BD.Resgistro(UsuarioRegistrar);
        
-        if(ViewBag.Existe = false)
+        if(ViewBag.Existe == false)
         {
                 HttpContext.Session.SetString("ID", UsuarioRegistrar.Id.ToString());
         }

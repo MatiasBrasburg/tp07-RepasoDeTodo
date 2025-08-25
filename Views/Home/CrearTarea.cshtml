@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "CrearTarea";
 }
  <link rel="stylesheet" href="style.css">
 <section class = "CrearTarea">
@@ -8,11 +8,11 @@
  <form method="post" action = '@Url.Action("CrearTarea", "Home")'>
 <p>
 Ingrese la nueva tarea
-    Titulo: <textarea name="Titulo" id="IdUserName" rows="1" cols="10"></textarea>
-    
- Descripcion: <textarea name="Descripcion" id="IdUserName" rows="1" cols="10"></textarea>
+    Titulo:  <input type="text" name="titulo" requiered>
+ Descripcion:  <input type="text" name="Descripcion" requiered>
 
- Fecha: <textarea name="Fecha" id="IdContraseña" rows="1" cols="10">
+ Fecha: <input type="date" name="Fecha" requiered>
+
 </textarea>
 <input type="submit" value=" Enviar">
 

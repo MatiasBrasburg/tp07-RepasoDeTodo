@@ -24,6 +24,8 @@ public class HomeController : Controller
       bool Finalizado = false;
       Tareas TareaNueva = new Tareas(Titulo,Descripcion, Fecha, Finalizado, id);
 
+
+      
       if (BD.TraerTarea(id) != TareaNueva)
       {
          int seCreo = BD.CrearTarea(TareaNueva);
@@ -75,16 +77,25 @@ public class HomeController : Controller
 
       return View("PagPrincipal");
    }
+public IActionResult TraerTareas()
+{
+   
+    if (int.TryParse(HttpContext.Session.GetString("ID"), out int id))
+    {
+       
+        List<Tareas> TareasList = BD.TraerTareas1(id); 
 
-   public IActionResult TraerTareas()
-   {
-      int id = int.Parse(HttpContext.Session.GetString("ID"));
-      List<Tareas> TareasList = BD.TraerTareas(id);
-      ViewBag.Tareas = TareasList;
+       
+        ViewBag.Tareas = TareasList;
 
-      return View("PagPrincipal");
-
-   }
+        return View("VerTareas"); 
+    }
+    else
+    {
+        
+        return RedirectToAction("Login", "Account");
+    }
+}
 
 
    public IActionResult TraerTarea()
@@ -125,7 +136,7 @@ public class HomeController : Controller
       return View("VerTareas");
    }
      
-    public IActionResult CrearTarea()
+    public IActionResult CrearTarea2()
    {
       return View("CrearTarea");
    }

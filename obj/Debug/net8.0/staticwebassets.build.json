@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ALi5jd5Dy8ic1xUSRUJTzTIZ+dp7hlmS7PHSW57IlBo=",
+  "Hash": "3tHeAa6muwxIURKWptUqO1TWmNZ8+XE+N2L5eobsFoQ=",
   "Source": "Tp07RepasoTodo_Urquizo_Brasburg",
   "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Tp07RepasoTodo_Urquizo_Brasburg\\wwwroot",
       "Source": "Tp07RepasoTodo_Urquizo_Brasburg",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\css\\site.css",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\favicon.ico",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\imagenes\\CrearTarea.jpg",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\imagenes\\CrearTarea.jpg",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "imagenes/CrearTarea.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\CrearTarea.jpg"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\imagenes\\lista-tareas-estilo-dibujos-animados-mujer-lapiz-sus-manos-cerca-pizarra-estilo-plano_338906-21.jpg.jpg",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\imagenes\\lista-tareas-estilo-dibujos-animados-mujer-lapiz-sus-manos-cerca-pizarra-estilo-plano_338906-21.jpg.jpg",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "imagenes/lista-tareas-estilo-dibujos-animados-mujer-lapiz-sus-manos-cerca-pizarra-estilo-plano_338906-21.jpg.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\lista-tareas-estilo-dibujos-animados-mujer-lapiz-sus-manos-cerca-pizarra-estilo-plano_338906-21.jpg.jpg"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\imagenes\\TareasFondo.jpg",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\imagenes\\TareasFondo.jpg",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "imagenes/TareasFondo.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\TareasFondo.jpg"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\js\\site.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Tp07RepasoTodo_Urquizo_Brasburg",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49257286\\Documents\\tp07-RepasoDeTodo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\wwwroot\\",
       "BasePath": "_content/Tp07RepasoTodo_Urquizo_Brasburg",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

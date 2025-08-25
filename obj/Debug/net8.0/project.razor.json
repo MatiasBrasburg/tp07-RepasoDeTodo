@@ -19369,8 +19369,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\Views\\Home\\PagPrincipal.cshtml",
-      "TargetPath": "Views\\Home\\PagPrincipal.cshtml",
+      "FilePath": "c:\\Users\\49257286\\Downloads\\tp07-RepasoDeTodo\\Views\\Account\\PagPrincipal.cshtml",
+      "TargetPath": "Views\\Account\\PagPrincipal.cshtml",
       "FileKind": "mvc"
     },
     {
