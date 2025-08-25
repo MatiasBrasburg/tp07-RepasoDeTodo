@@ -17,7 +17,8 @@ public class HomeController : Controller
    {
       return RedirectToAction("Index", "Account");
    }
-
+   
+[HttpPost]
    public IActionResult CrearTarea(string Descripcion, DateTime Fecha, string Titulo)
    {
       int id = int.Parse(HttpContext.Session.GetString("ID"));
@@ -77,11 +78,10 @@ public class HomeController : Controller
 
       return View("PagPrincipal");
    }
-public IActionResult TraerTareas()
+public IActionResult TraerTareas(int id)
 {
    
-    if (int.TryParse(HttpContext.Session.GetString("ID"), out int id))
-    {
+   
        
         List<Tareas> TareasList = BD.TraerTareas1(id); 
 
@@ -90,12 +90,8 @@ public IActionResult TraerTareas()
 
         return View("VerTareas"); 
     }
-    else
-    {
-        
-        return RedirectToAction("Login", "Account");
-    }
-}
+  
+
 
 
    public IActionResult TraerTarea()

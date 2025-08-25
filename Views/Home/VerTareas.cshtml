@@ -4,12 +4,13 @@
     ViewData["Title"] = "VerTareas";
 }
    <H1>Tus Tareas</H1>
+ 
     @foreach (Tareas tareas in ViewBag.Tareas){
         
-        <li> Titulo: @ViewBag.Tarea.Titulo</li>
-        <li> Descripcion: @ViewBag.Tarea.Descripcion</li>
-        <li> Fecha: @ViewBag.Tarea.Fecha</li>
-        <li> Finalizado: @ViewBag.Tarea.Finalizado</li>
+        <li> Titulo: @tareas.Titulo</li>
+        <li> Descripcion: @tareas.Descripcion</li>
+        <li> Fecha: @tareas.Fecha</li>
+        <li> Finalizado: @tareas.Finalizado</li>
 
 
        <a  href='@Url.Action("ActualizarTarea", "Home")'>Actualizar Tarea</a>
@@ -18,7 +19,7 @@
        <a  href='@Url.Action("FinalizarTarea", "Home", new {Id = tareas.Id})'>Finalizar Tarea</a>
   
       
-    }
+    
 
        <p> @ViewBag.Mensaje </p>
- 
+    }

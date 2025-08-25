@@ -11,10 +11,10 @@ public class Tareas
     public string Descripcion{get; private set;}
 
     [JsonProperty]
-public DateTime Fecha {get; private set;}
+public DateTime? Fecha { get; set; }
 
     [JsonProperty]
-public bool Finalizado {get; private set;}
+public DateTime? Finalizado { get; set; }
  
     [JsonProperty]
 public int IdUsuario {get; private set;}

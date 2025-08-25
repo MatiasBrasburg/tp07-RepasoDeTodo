@@ -66,7 +66,7 @@ public class AccountController : Controller
 
         return View("Index");
     }
-[HttpPost]
+
      public IActionResult CerrarSesion ()
     {
             HttpContext.Session.Clear();
