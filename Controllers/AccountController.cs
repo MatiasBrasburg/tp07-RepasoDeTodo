@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Tp07RepasoTodo_Urquizo_Brasburg.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace Tp07RepasoTodo_Urquizo_Brasburg.Controllers;
 
@@ -41,19 +42,18 @@ public class AccountController : Controller
    public IActionResult Registrarse2(string UserName, string Contraseña, string Nombre, string Apellido, string Foto)
     {
         bool Sepudo = false;
-      string DONDE = "Index";
+      
        DateTime fechaHoy = DateTime.Now;
 
      Usuario UsuarioRegistrar  = new Usuario ( UserName, Contraseña, Nombre, Apellido, Foto);
    
 
 
-        Sepudo = BD.Resgistro(UsuarioRegistrar);
-         ViewBag.Existe = Sepudo;
+        
+         ViewBag.Existe =  BD.Resgistro(UsuarioRegistrar);;
        
-        if(ViewBag.Existe == false)
+        if(ViewBag.Existe = 0)
         {
-               DONDE = "Registrar";
                 HttpContext.Session.SetString("ID", UsuarioRegistrar.Id.ToString());
         }
         else
@@ -63,7 +63,7 @@ public class AccountController : Controller
         }
         
 
-        return View(DONDE);
+        return View("Index");
     }
 [HttpPost]
      public IActionResult CerrarSesion ()

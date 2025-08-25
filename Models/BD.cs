@@ -23,17 +23,28 @@ Usuario User = null;
     return User;
 }
 
-public static bool  Resgistro (Usuario user)
+public static int Resgistro(Usuario user)
 {
-bool existe;
+    int filas = 0;
     using (SqlConnection connection = new SqlConnection(_connectionString))
     {
-        string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre,Apellido,Foto,UltimoInicio) VALUES (@pUsername,  @pContraseña, @pNombre,  @pApellido, @pFoto)";
-        existe = connection.QueryFirstOrDefault<bool>(query, new {pUsername= user.Username,  pContraseña=user.Contraseña , pNombre = user.Nombre  ,  pApellido = user.Apellido,  pFoto  = user.Foto});
+        string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre, Apellido, Foto) " +
+                       "VALUES (@pUsername, @pContraseña, @pNombre, @pApellido, @pFoto)";
+
+        filas = connection.Execute(query, new
+        {
+            pUsername = user.Username,
+            pContraseña = user.Contraseña,
+            pNombre = user.Nombre,
+            pApellido = user.Apellido,
+            pFoto = user.Foto
+        });
+
+    
     }
- 
-    return existe;
+    return filas;
 }
+
 
 public static List<Tareas> TraerTareas( int IdUsuario )
 {
