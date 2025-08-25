@@ -33,6 +33,7 @@ public class AccountController : Controller
         {
             BD.ActualizarFecahLogIn(UsuarioLogin.Id);
         HttpContext.Session.SetString("ID", UsuarioLogin.Id.ToString());
+        Console.WriteLine( HttpContext.Session.GetString("ID"));
 
         }
 

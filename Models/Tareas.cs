@@ -20,7 +20,7 @@ public DateTime? Finalizado { get; set; }
 public int IdUsuario {get; private set;}
 
 
-public Tareas(string Titulo ,string Descripcion, DateTime Fecha, bool Finalizado, int id)
+public Tareas(string Titulo ,string Descripcion, DateTime Fecha, bool Finalizado, int IdUsuario)
 {
 
 }

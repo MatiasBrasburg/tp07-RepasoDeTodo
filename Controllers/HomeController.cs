@@ -21,13 +21,13 @@ public class HomeController : Controller
 [HttpPost]
    public IActionResult CrearTarea(string Descripcion, DateTime Fecha, string Titulo)
    {
-      int id = int.Parse(HttpContext.Session.GetString("ID"));
+      int idUsuario = int.Parse(HttpContext.Session.GetString("ID"));
       bool Finalizado = false;
-      Tareas TareaNueva = new Tareas(Titulo,Descripcion, Fecha, Finalizado, id);
+      Tareas TareaNueva = new Tareas(Titulo,Descripcion, Fecha, Finalizado, idUsuario);
 
 
       
-      if (BD.TraerTarea(id) != TareaNueva)
+      if (BD.TraerTarea(idUsuario) != TareaNueva)
       {
          int seCreo = BD.CrearTarea(TareaNueva);
 
