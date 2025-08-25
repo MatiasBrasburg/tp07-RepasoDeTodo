@@ -28,7 +28,7 @@ public int Id {get; private set;}
 
  }
 
- public Usuario(string Username, string Contraseña, string Nombre, string Apellido, string Foto)
+ public Usuario(string Username, string Contraseña, string Nombre, string Apellido, string Foto, DateTime UltimoInicio)
  {
 
  }

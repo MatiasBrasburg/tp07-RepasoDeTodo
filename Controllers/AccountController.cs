@@ -41,18 +41,18 @@ public class AccountController : Controller
 [HttpPost]
    public IActionResult Registrarse2(string UserName, string Contraseña, string Nombre, string Apellido, string Foto)
     {
-        bool Sepudo = false;
+        
       
-       DateTime fechaHoy = DateTime.Now;
+       DateTime UltimoInicio = DateTime.Now;
 
-     Usuario UsuarioRegistrar  = new Usuario ( UserName, Contraseña, Nombre, Apellido, Foto);
+     Usuario UsuarioRegistrar  = new Usuario ( UserName, Contraseña, Nombre, Apellido, Foto, UltimoInicio);
    
 
 
         
          ViewBag.Existe =  BD.Resgistro(UsuarioRegistrar);;
        
-        if(ViewBag.Existe = 0)
+        if(ViewBag.Existe = false)
         {
                 HttpContext.Session.SetString("ID", UsuarioRegistrar.Id.ToString());
         }

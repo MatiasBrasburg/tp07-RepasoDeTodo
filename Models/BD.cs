@@ -7,7 +7,7 @@ public static class BD
 {
 
 private static string _connectionString = @"Server=localhost;
-DataBase=Tp7- Repaso - ToDo List(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
+DataBase=Tp7-Repaso-ToDoList(Prog);Integrated Security=True;TrustServerCertificate=True;"; //debe ser algo de esto
 
 
 
@@ -23,9 +23,10 @@ Usuario User = null;
     return User;
 }
 
-public static int Resgistro(Usuario user)
+public static bool Resgistro(Usuario user)
 {
     int filas = 0;
+    bool Existe = true;
     using (SqlConnection connection = new SqlConnection(_connectionString))
     {
         string query = "INSERT INTO Usuarios (UserName, Contraseña, Nombre, Apellido, Foto) " +
@@ -39,10 +40,12 @@ public static int Resgistro(Usuario user)
             pApellido = user.Apellido,
             pFoto = user.Foto
         });
-
+        if(filas> 1){
+           Existe = false;
+        }
     
     }
-    return filas;
+    return Existe;
 }
 
 
